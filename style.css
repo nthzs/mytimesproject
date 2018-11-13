@@ -12,6 +12,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 5;
+  border-bottom: 1px solid black;
 }
 
 header img {
@@ -30,7 +31,6 @@ header #title {
   align-items: center;
   padding-left: 15px;
   color:  MediumAquamarine;
-
 }
 
 header nav {
@@ -49,8 +49,63 @@ header nav a {
 }
 
 
-#container {
-  position: relative;
-  top: 80px;
 
+/* content's styles */
+
+#maincontainer {
+  display: flex;
+  justify-content: center;
+
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+
+#container {
+  border:  1px solid red;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  padding-top:   40px;
+  padding-right: 40px;
+
+  position: relative;
+  top: 53px;
+}
+
+.column.large {
+  border:  1px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+}
+
+.column.medium {
+  border:  1px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.column.small {
+  border:  1px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.imgtxt {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.maintxt {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
 }

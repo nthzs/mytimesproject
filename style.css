@@ -1,117 +1,56 @@
 header {
-  border: 1px solid red;
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-  margin-top: 0;
-
+  /* border:  1px solid red; */
   display: flex;
-  align-items: center;
 
+  font-family: Verdana;
+  font-size:   14px;
+  font-weight: bold;
+
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
   position: fixed;
-  top: 0px;
   width: 100%;
   z-index: 5;
-  background-color: white;
 }
 
-#logoimg {
-  border: 1px solid rebeccapurple;
-  padding-left: 20px;
-}
-
-#logoname {
-  border: 1px solid blue;
-  color: MediumAquamarine;
-  padding-left: 10px;
-  flex-grow: 1;
-}
-
-#navbox {
-  border: 1px solid green;
-
+header img {
+  /* border:  1px solid blue; */
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px;
+  align-items: center;
+  padding-left: 30px;
 }
 
-.navlink {
-  padding-left:  15px;
-  padding-right: 15px;
-}
-
-#maincontainer {
+header #title {
+  /* border:    1px solid green; */
+  flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  color:  MediumAquamarine;
+
 }
+
+header nav {
+  /* border:  1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 40px;
+  padding-left:  10px;
+  width: 200px;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0 5px;
+}
+
 
 #container {
-  border: 1px solid green;
   position: relative;
-  top: 66px;
-  padding: 40px 10px 0 0;
+  top: 80px;
 
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  border: 1px solid fuchsia;
-  margin-right: 40px;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.column.large {
-  width: 630px;
-}
-
-.column.medium {
-  width: 300px;
-}
-
-.column.small {
-  width: 240px;
-}
-
-.column.large #mother {
-  background-image: url("./img/img-story-main.png");
-  background-size: cover;
-  height: 300px;
-  color: white;
-  font-size: 47px;
-  font-weight: bold;
-}
-
-.column.large #earth {
-  background-image: url("./img/img-story-2.png");
-  background-repeat: repeat;
-  height: 300px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.column.large #cameras {
-  background-image: url("./img/img-story-3.png");
-  background-repeat: repeat;
-  height: 300px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.column.medium #cats {
-  background-image: url("./img/img-story-1.png");
-  background-repeat: repeat;
-  height: 300px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
 }
